@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    :tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <!--
+        In the above cardview widget
+        cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view
+        card background color will give background color to your card view
+        card max elevation will give the cardview maximum elevation
+        card prevent corner overlap will add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
+        card use compact padding will add padding in API v21+ as well to have the same measurements with previous versions.
+        below are the two widgets imageview and text view we are displaying inside our card view.
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tech"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/imgregister"
+                android:layout_gravity="center" />
+            <EditText
+                android:id="@+id/regName"
+                android:layout_width="fill_parent"
+                android:background="#dee0de"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:hint="Name"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:drawableTint="#000080"
+                android:textColorHint="#000080"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:drawableLeft="@drawable/person" />
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="fill_parent"
+                android:background="#dee0de"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:hint="Email-ID"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:drawableTint="#000080"
+                android:textColorHint="#000080"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:drawableLeft="@drawable/mail" />
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="fill_parent"
+                android:background="#dee0de"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:inputType="numberPassword"
+                android:drawableTint="#000080"
+                android:textColorHint="#000080"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:drawableLeft="@drawable/pass" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:background="#dee0de"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:hint="Confirm Passowrd"
+                android:inputType="numberPassword"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:drawableTint="#000080"
+                android:textColorHint="#000080"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:drawableLeft="@drawable/confrm" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:background="#dee0de"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:hint="Enter Mobile "
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:drawableTint="#000080"
+                android:textColorHint="#000080"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:drawableLeft="@drawable/mob" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_marginLeft="90dp">
+               <RadioButton
+                android:id="@+id/rb_reg_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/rb_reg_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Female"/>
+           </LinearLayout>
+
+            <Button
+
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:id="@+id/Registered"
+                android:background="#40a4e3"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

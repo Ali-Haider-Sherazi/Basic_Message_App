@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:minHeight="@dimen/list_item_height"
+    android:backgroundTint="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/setImg"
+        android:background="@color/category_family"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/family_father" />
+
+    <RelativeLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:background="@color/category_family"
+            android:padding="10dp"
+            android:text="DADY"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Names"
+            android:layout_marginLeft="85dp"
+            android:background="@color/category_family"
+            android:padding="5dp"
+            android:text="+923350439948"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+      <ScrollView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/Number"
+          android:layout_above="@id/Msg">
+        <LinearLayout
+            android:id="@+id/msg_layout"
+            android:layout_below="@id/Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+      </ScrollView>
+
+        <include
+            layout="@layout/type_message_area"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="horizontal"-->
+<!--android:padding="16dp"-->
+<!--android:minHeight="@dimen/list_item_height"-->
+<!--android:backgroundTint="@color/tan_background">-->
+<!--<ImageView-->
+<!--    android:id="@+id/image"-->
+<!--    android:layout_width="@dimen/list_item_height"-->
+<!--    android:layout_height="@dimen/list_item_height" />-->
+<!--<LinearLayout-->
+<!--    android:id="@+id/text_container"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:paddingLeft="16dp"-->
+<!--    android:background="@color/category_numbers">-->
+<!--    <TextView-->
+<!--        android:id="@+id/Name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="bottom"-->
+<!--        android:textAppearance="?android:textAppearanceMedium"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/Sending"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="bottom"-->
+<!--        android:textAppearance="?android:textAppearanceMedium"-->
+<!--        android:textColor="@color/white" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/Receiving"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="top"-->
+<!--        android:textAppearance="?android:textAppearanceMedium"-->
+<!--        android:textColor="@color/white" />-->
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
